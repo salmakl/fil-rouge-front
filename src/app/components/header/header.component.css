@@ -1,0 +1,30 @@
+nav{
+    background-color: #8A4FFF;
+    height: 60px;
+    width: 100%;
+    color: #FFF;
+
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+.brand-logo{
+   
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+li{
+    list-style: none;
+}
+
+button{
+    border: 0.5px solid white;
+    padding: 2px 20px 5px 20px;
+    border-radius: 20px;
+}
