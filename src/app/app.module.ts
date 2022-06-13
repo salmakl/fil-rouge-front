@@ -11,6 +11,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FirstComponent } from './components/forms/first/first.component';
 import { ButtonComponent } from './components/button/button.component';
+import { SelectlogoComponent } from './components/forms/selectlogo/selectlogo.component';
+import { DnaFormComponent } from './components/forms/dna-form/dna-form.component';
+import { ExistingDesignComponent } from './components/forms/existing-design/existing-design.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { ButtonComponent } from './components/button/button.component';
     HeaderComponent,
     FooterComponent,
     FirstComponent,
-    ButtonComponent
+    ButtonComponent,
+    SelectlogoComponent,
+    DnaFormComponent,
+    ExistingDesignComponent,
+
   ],
   imports: [
     BrowserModule,

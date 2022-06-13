@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FirstComponent } from './components/forms/first/first.component';
 import { ButtonComponent } from './components/button/button.component';
+import { DnaFormComponent } from './components/forms/dna-form/dna-form.component';
+import { SelectlogoComponent } from './components/forms/selectlogo/selectlogo.component';
 
 const routes: Routes = [
   { path: 'login',component: LoginComponent },
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path: 'footer', component:FooterComponent },
   {path: 'form', component:FirstComponent },
   {path: 'button', component:ButtonComponent },
+  {path: 'dna', component:DnaFormComponent },
+  {path: 'logos', component:SelectlogoComponent },
 
 ];
 

@@ -1,0 +1,57 @@
+img {
+    width: 200px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+
+    width: 200px;
+    display: block;
+}
+
+input[type=checkbox]:checked+label {
+    border: 5px solid #b17ed7;
+}
+
+p {
+    color: #0c293f;
+    max-width: 425px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+
+    font-weight: 800;
+    line-height: 1.2;
+    color: #0c293f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    max-width: 380px;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: white;
+    height: 100%;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
