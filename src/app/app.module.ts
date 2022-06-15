@@ -9,11 +9,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FirstComponent } from './components/forms/first/first.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SelectlogoComponent } from './components/forms/selectlogo/selectlogo.component';
 import { DnaFormComponent } from './components/forms/dna-form/dna-form.component';
 import { ExistingDesignComponent } from './components/forms/existing-design/existing-design.component';
+import { CardComponent } from './components/card/card.component';
+import { FormComponent } from './components/form/form.component';
+import { DnaComponent } from './components/dna/dna.component';
+import { UploadComponent } from './components/upload/upload.component';
+import { ChekoutComponent } from './components/chekout/chekout.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 
 @NgModule({
@@ -23,11 +28,16 @@ import { ExistingDesignComponent } from './components/forms/existing-design/exis
     LandingPageComponent,
     HeaderComponent,
     FooterComponent,
-    FirstComponent,
     ButtonComponent,
     SelectlogoComponent,
     DnaFormComponent,
     ExistingDesignComponent,
+    CardComponent,
+    FormComponent,
+    DnaComponent,
+    UploadComponent,
+    ChekoutComponent,
+    PricingComponent,
 
   ],
   imports: [

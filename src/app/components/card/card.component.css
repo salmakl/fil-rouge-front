@@ -1,0 +1,33 @@
+.card{
+  padding: 25px;
+font-size: 20px;
+font-weight: 700;
+line-height: 1.28;
+text-align: center;
+color: #0c293f;
+display: inline-block;
+width: 220px;
+box-shadow: 0 3px 10px 0 rgba(164,175,184,.75);
+margin: 20px;
+background-size: 50%;
+background-repeat: no-repeat;
+background-position: top;
+cursor: pointer;
+
+}
+.img-container{
+width: 80px;
+}
+img{
+  width: 100%;
+  background-color: #8A4FFF;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px;
+  display: block;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
