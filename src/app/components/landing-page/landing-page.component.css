@@ -140,25 +140,23 @@ h3 {
     font-weight: bold;
 }
 
-.solve{
+.solve {
     background-color: #F4F6FC;
 }
-.solve-list{
+
+.solve-list {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
     gap: 50px;
 }
 
-.title{
+.title {
     padding: 0 0 40px 0;
     display: flex;
     flex-direction: column;
     color: #A9A9A9;
     text-align: center;
     line-height: 1.1;
-  
+
 }
-
-
-
