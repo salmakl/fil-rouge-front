@@ -1,0 +1,16 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+    background-color: white;
+    padding: 40px 30px;
+    color: #A9A9A9;
+}
+p{
+    font-size: 12px;
+    line-height: 1.5;
+}
+h4{
+    font-weight: bold;
+}

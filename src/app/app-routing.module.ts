@@ -10,6 +10,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { DnaFormComponent } from './components/forms/dna-form/dna-form.component';
 import { SelectlogoComponent } from './components/forms/selectlogo/selectlogo.component';
 import { ExistingDesignComponent } from './components/forms/existing-design/existing-design.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: 'login',component: LoginComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'dna', component:DnaFormComponent },
   {path: 'logos', component:SelectlogoComponent },
   {path: 'existing-design', component:ExistingDesignComponent },
+  {path: 'dashboard', component:DashboardComponent },
 
 ];
 

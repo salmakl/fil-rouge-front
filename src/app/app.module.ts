@@ -19,6 +19,10 @@ import { DnaComponent } from './components/dna/dna.component';
 import { UploadComponent } from './components/upload/upload.component';
 import { ChekoutComponent } from './components/chekout/chekout.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { BoxComponent } from './components/box/box.component';
 
 
 @NgModule({
@@ -38,6 +42,10 @@ import { PricingComponent } from './components/pricing/pricing.component';
     UploadComponent,
     ChekoutComponent,
     PricingComponent,
+    DashboardComponent,
+    NavbarComponent,
+    SidebarComponent,
+    BoxComponent,
 
   ],
   imports: [
