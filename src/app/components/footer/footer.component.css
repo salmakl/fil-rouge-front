@@ -3,14 +3,9 @@ footer{
     padding: 20px;
     color: white;
 }
-.brand-logo{
-   
-    font-family: 'Poppins', sans-serif;
-}
+
 h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 25px;
-   
+    font-size: 25px; 
 }
 .footer-social> ul{
     display: flex;

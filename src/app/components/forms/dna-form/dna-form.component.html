@@ -1,74 +1,8 @@
 <main>
     <app-header></app-header>
-    <section>
-        <h1>Describe your brand DNA</h1>
-        <p>Move the sliders to let us know which of the following best fits the image / identity of the brand you are trying to create.</p>
-
-       <form>
-    
-       <div *ngIf="steps == 2" >
-        <div class="slidecontainer" >
-            <div><p>Traditional</p></div>
-             <div><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-             </div>
-             <div><p>Modern</p></div>
-         </div>
- 
-         <div class="slidecontainer">
-            <div> <p>Value</p></div>
-             <div><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
-             <p>Premium</p>
-         </div>
- 
-         <div class="slidecontainer">
-            <div> <p>Bold</p> </div>
-             <div>
-                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-             </div>
-             <div><p>Refined</p></div>
-         </div>
- 
-         <div class="slidecontainer">
-             <div><p>Detailed</p></div>
-             <div><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
-             <div><p>Clean</p></div>
-         </div>
- 
-         <div class="slidecontainer">
-             <div><p>Handcrafted</p></div>
-            <div><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
-             <div><p>Minimalist</p></div>
-         </div>
- 
-         <div class="slidecontainer">
-             <div><p>Serious</p></div>
-            <div><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
-             <div><p>Playful</p></div>
-         </div>
- 
-         <div class="slidecontainer">
-             <div><p>Fit in the category</p></div>
-             <div><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></div>
-            <div><p>Stand out from the crowd</p></div>
-         </div>
-       </div>
-       </form>
-    </section>
+    <app-form title="Tell us the brand name you need in your logo" placeholder="Brand Name"></app-form>
+    <!-- <app-form title="Tell us in which language your briefing will be" placeholder="Language"></app-form> -->
+    <!-- <app-selectlogo></app-selectlogo> -->
     
 </main>
-<footer>
-    <div>
-        <button *ngIf="steps != 1" (click)="previous()">Back</button>
-        <div *ngIf= "steps== 1">We plant 1 tree every design project you start</div>
-    </div>
-    
-    <div>
-        <button *ngIf="steps !=2" (click)="next()">Continue</button>
-    </div>
-    <div>
-        <button *ngIf="steps == 2">Submit</button>
-    </div>
-    <div>
-        <span>We plant 1 tree every design project you start</span>
-    </div>
-</footer>
+<app-button></app-button>

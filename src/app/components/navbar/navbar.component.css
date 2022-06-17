@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+    color: #8a4fff;
+    box-shadow: 4px 4px 4px #F4F6FC;
+    padding: 20px;
+    margin-left: 90px;
+}
+
+.user {
+    display: flex;
+    gap: 15px;
+}
+
+.brand-logo {
+    font-size: 15px;
+    font-weight: bold;
+}

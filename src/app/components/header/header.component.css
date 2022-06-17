@@ -10,10 +10,7 @@ nav{
     justify-content: space-between;
     padding: 15px 40px;
 }
-.brand-logo{
-   
-    font-family: 'Poppins', sans-serif;
-}
+
 ul{
     display: flex;
     justify-content: space-between;

@@ -24,6 +24,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BoxComponent } from './components/box/box.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { BrandComponent } from './components/brand/brand.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { ContactComponent } from './components/contact/contact.component';
     SidebarComponent,
     BoxComponent,
     ContactComponent,
+    BrandComponent,
 
   ],
   imports: [

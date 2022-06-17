@@ -1,0 +1,89 @@
+.header {
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brands-list {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+    gap: 30px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-new {
+    margin-top: 45px;
+}
+
+.plus {
+    font-size: 120px;
+    font-weight: bold;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    color: rgb(11, 11, 92);
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.brand:hover {
+    background-color: #18da8e;
+    color: white;
+}
+
+.brand-status>span {
+    font-weight: bold;
+    position: relative;
+    color: #D93F21;
+    margin: 20px;
+}
+
+span::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 33%;
+    left: -15px;
+    background-color: #D93F21;
+
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    color: rgb(11, 11, 92);
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
