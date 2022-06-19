@@ -25,6 +25,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BoxComponent } from './components/box/box.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BrandComponent } from './components/brand/brand.component';
+import { PriceCardComponent } from './components/price-card/price-card.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { BrandComponent } from './components/brand/brand.component';
     BoxComponent,
     ContactComponent,
     BrandComponent,
+    PriceCardComponent,
 
   ],
   imports: [
