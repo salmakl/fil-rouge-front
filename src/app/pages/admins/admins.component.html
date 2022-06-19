@@ -1,0 +1,197 @@
+<div class="flex justify-between w-full">
+    <button type="button" class="px-10 py-3 h-fit bg-primary text-white rounded-md text-lg font-bold" (click)="toggleModal()">Create New Admin +</button>
+    <form class="flex items-center justify-end pb-10">
+      <div class="relative">
+          <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+              <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+          </div>
+          <input type="text" id="simple-search" class="bg-gray-50 border-gray-300 text-gray-900 text-sm block pl-10  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-violet-500 dark:focus:border-violet-500 block p-4 w-full text-gray-900 bg-gray-50 rounded-lg  border-gray-300 sm:text-md focus:ring-violet-500 focus:border-2 border-2 shadow-md outline-none focus:border-solid border-slate-200 focus:border-violet-500" placeholder="Lorem" required>
+      </div>
+      <button type="submit" class="p-4 ml-2 text-sm font-medium text-white bg-primary rounded-lg border border-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 dark:bg-violet-600 dark:hover:bg-violet-700 dark:focus:ring-violet-800"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>
+    </form>
+  </div>
+  
+  <div *ngIf="showModal" class="overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
+    <div class="relative w-1/3 my-6 mx-auto max-w-6xl">
+      <!--content-->
+      <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+        <!--header-->
+        <div class="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+          <h3 class="text-3xl font-semibold">
+            Create Admin
+          </h3>
+          <button class="p-1 ml-auto bg-transparent border-0 text-dark opacity-1 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" (click)="toggleModal()">
+            <span class="bg-transparent text-dark opacity-1 h-6 w-6 text-2xl block outline-none focus:outline-none">
+              ×
+            </span>
+          </button>
+        </div>
+        <!--body-->
+        <div class="relative p-10 flex-auto">
+            <div class="flex flex-col gap-16">
+              <div class="relative">
+                <input type="text" id="floating_name" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " />
+                <label for="floating_name" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Name</label>
+            </div>
+            <div class="relative">
+              <input type="email" id="floating_email" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " />
+              <label for="floating_email" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Email</label>
+            </div>
+            <div class="relative">
+              <input type="password" id="floating_password" class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-700 border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-primary focus:outline-none focus:ring-0 focus:border-primary peer" placeholder=" " />
+              <label for="floating_password" class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-primary peer-focus:dark:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4">Password</label>
+            </div>
+          </div>
+        </div>
+        <!--footer-->
+        <div class="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+          <button class="text-white rounded-md bg-success font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+            Create
+          </button>
+          <button class="text-error background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" (click)="toggleModal()">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showModal" class="opacity-25 fixed inset-0 z-40 bg-black"></div>
+  
+  <div class="relative w-full overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-lg text-left text-gray-500 dark:text-gray-400">
+      <thead class="text-md text-gray-700 uppercase bg-violet-100 dark:bg-gray-700 dark:text-gray-400">
+        <tr>
+          <th scope="col" class="px-6 py-3">
+            #ID
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Name
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Email
+          </th>
+          <th scope="col" class="px-6 py-3">
+            Delete
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-violet-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            #5164237
+          </th>
+          <td class="px-6 py-4">
+            Sliver Kilver
+          </td>
+          <td class="px-6 py-4">
+            Sliver.kilver@gmail.com
+          </td>
+          <td class="px-6 py-4 text-right flex">
+            <img src="assets/icons/trash.svg" alt="" srcset="">
+          </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-violet-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            #5164237
+          </th>
+          <td class="px-6 py-4">
+            Sliver Kilver
+          </td>
+          <td class="px-6 py-4">
+            Sliver.kilver@gmail.com
+          </td>
+          <td class="px-6 py-4 text-right flex">
+            <img src="assets/icons/trash.svg" alt="" srcset="">
+          </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-violet-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            #5164237
+          </th>
+          <td class="px-6 py-4">
+            Sliver Kilver
+          </td>
+          <td class="px-6 py-4">
+            Sliver.kilver@gmail.com
+          </td>
+          <td class="px-6 py-4 text-right flex">
+            <img src="assets/icons/trash.svg" alt="" srcset="">
+          </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-violet-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            #5164237
+          </th>
+          <td class="px-6 py-4">
+            Sliver Kilver
+          </td>
+          <td class="px-6 py-4">
+            Sliver.kilver@gmail.com
+          </td>
+          <td class="px-6 py-4 text-right flex">
+            <img src="assets/icons/trash.svg" alt="" srcset="">
+          </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-violet-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            #5164237
+          </th>
+          <td class="px-6 py-4">
+            Sliver Kilver
+          </td>
+          <td class="px-6 py-4">
+            Sliver.kilver@gmail.com
+          </td>
+          <td class="px-6 py-4 text-right flex">
+            <img src="assets/icons/trash.svg" alt="" srcset="">
+          </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-violet-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            #5164237
+          </th>
+          <td class="px-6 py-4">
+            Sliver Kilver
+          </td>
+          <td class="px-6 py-4">
+            Sliver.kilver@gmail.com
+          </td>
+          <td class="px-6 py-4 text-right flex">
+            <img src="assets/icons/trash.svg" alt="" srcset="">
+          </td>
+        </tr>
+        <tr class="border-b dark:bg-gray-800 dark:border-gray-700 odd:bg-white even:bg-violet-50 odd:dark:bg-gray-800 even:dark:bg-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+            #5164237
+          </th>
+          <td class="px-6 py-4">
+            Sliver Kilver
+          </td>
+          <td class="px-6 py-4">
+            Sliver.kilver@gmail.com
+          </td>
+          <td class="px-6 py-4 text-right flex">
+            <img src="assets/icons/trash.svg" alt="" srcset="">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <nav aria-label="Page navigation example" class="mt-10">
+    <ul class="inline-flex -space-x-px">
+      <li>
+        <a href="#" class="py-2 px-3 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
+      </li>
+      <li>
+        <a href="#" aria-current="page" class="py-2 px-3 text-primary bg-violet-50 border border-gray-300 hover:bg-gray-100 hover:text-violet-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
+      </li>
+      <li>
+        <a href="#" class="py-2 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
+      </li>
+      <li>
+        <a href="#" class="py-2 px-3 leading-tight text-gray-500 bg-white rounded-r-lg border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
+      </li>
+    </ul>
+  </nav>
+  
+  

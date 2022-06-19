@@ -26,6 +26,15 @@ import { BoxComponent } from './components/box/box.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { BrandComponent } from './components/brand/brand.component';
 import { PriceCardComponent } from './components/price-card/price-card.component';
+import { ClientCardComponent } from './components/client-card/client-card.component';
+import { ClientListItemComponent } from './components/client-list-item/client-list-item.component';
+import { OrderTableComponent } from './components/order-table/order-table.component';
+import { ProfilCardComponent } from './components/profil-card/profil-card.component';
+import { StatisticCardComponent } from './components/statistic-card/statistic-card.component';
+import { ClientsComponent } from './pages/clients/clients.component';
+import { AdminsComponent } from './pages/admins/admins.component';
+import { OrdersComponent } from './pages/orders/orders.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -52,6 +61,15 @@ import { PriceCardComponent } from './components/price-card/price-card.component
     ContactComponent,
     BrandComponent,
     PriceCardComponent,
+    ClientCardComponent,
+    ClientListItemComponent,
+    OrderTableComponent,
+    ProfilCardComponent,
+    StatisticCardComponent,
+    ClientsComponent,
+    AdminsComponent,
+    OrdersComponent,
+    ProfileComponent,
 
   ],
   imports: [
