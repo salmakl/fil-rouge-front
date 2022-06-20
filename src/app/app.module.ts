@@ -10,9 +10,8 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
-import { SelectlogoComponent } from './components/forms/selectlogo/selectlogo.component';
-import { DnaFormComponent } from './components/forms/dna-form/dna-form.component';
-import { ExistingDesignComponent } from './components/forms/existing-design/existing-design.component';
+import { SelectlogoComponent } from './components/selectlogo/selectlogo.component';
+
 import { CardComponent } from './components/card/card.component';
 import { FormComponent } from './components/form/form.component';
 import { DnaComponent } from './components/dna/dna.component';
@@ -35,6 +34,9 @@ import { ClientsComponent } from './pages/clients/clients.component';
 import { AdminsComponent } from './pages/admins/admins.component';
 import { OrdersComponent } from './pages/orders/orders.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { FormsComponent } from './pages/forms/forms.component';
+import { DashComponent } from './pages/dash/dash.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 @NgModule({
@@ -46,8 +48,6 @@ import { ProfileComponent } from './pages/profile/profile.component';
     FooterComponent,
     ButtonComponent,
     SelectlogoComponent,
-    DnaFormComponent,
-    ExistingDesignComponent,
     CardComponent,
     FormComponent,
     DnaComponent,
@@ -70,6 +70,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
     AdminsComponent,
     OrdersComponent,
     ProfileComponent,
+    FormsComponent,
+    DashComponent,
+    RegisterComponent,
 
   ],
   imports: [

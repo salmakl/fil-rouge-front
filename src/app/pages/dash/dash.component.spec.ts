@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExistingDesignComponent } from './existing-design.component';
+import { DashComponent } from './dash.component';
 
-describe('ExistingDesignComponent', () => {
-  let component: ExistingDesignComponent;
-  let fixture: ComponentFixture<ExistingDesignComponent>;
+describe('DashComponent', () => {
+  let component: DashComponent;
+  let fixture: ComponentFixture<DashComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ExistingDesignComponent ]
+      declarations: [ DashComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExistingDesignComponent);
+    fixture = TestBed.createComponent(DashComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

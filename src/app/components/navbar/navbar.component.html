@@ -1,9 +1,47 @@
-<nav>
-    <div>
-        <a href="#" class="brand-logo">Hephaestus</a>
+<nav class="bg-primary border-b-2 border-slate-200 py-2.5 px-40 rounded ">
+    <div class="flex flex-wrap justify-between items-center">
+      <a [routerLink]="['/']" class="flex items-center">
+        <p class="font-bold text-2xl text-white">Hephaestus</p>
+      </a>
+  
+      <ul class="flex">
+        <li class="px-4">
+          <a [routerLink]="['/clients']" class="flex items-center p-2 text-base font-normal text-white rounded-lg dark:text-white hover:bg-violet-400 dark:hover:bg-gray-700">
+            <span class="font-semibold flex-1 mx-3">Clients</span>
+          </a>
+        </li>
+        <li class="px-4">
+          <a [routerLink]="['/orders']" class="flex items-center p-2 text-base font-normal text-white rounded-lg transition duration-75 hover:bg-violet-400 dark:hover:bg-gray-700 dark:text-white group">
+            <span class="font-semibold mx-3">Orders</span>
+          </a>
+        </li>
+        <li class="px-4">
+          <a [routerLink]="['/admins']" class="flex items-center p-2 text-base font-normal text-white rounded-lg transition duration-75 hover:bg-violet-400 dark:hover:bg-gray-700 dark:text-white group">
+            <span class="font-semibold mx-3">Admins</span>
+          </a>
+        </li>
+      </ul>
+      <div class="relative">
+        <!-- The div containing the selected value and an icon to visually indicate if the dropdown is open or closed -->
+        <div (click)="toggle()" class="relative w-fit px-4 py-2 rounded-md flex justify-center items-center cursor-pointer">
+            <div class="flex gap-5 items-center">
+              <div class="w-12 h-12 rounded-full flex justify-center items-center bg-white">
+                <p class="text-primary font-bold">MA</p>
+              </div>
+              <p class="text-white text-xl">Mohemeb Ahmed</p>
+            </div>
+        </div>
+        <!-- The div containing the available items -->
+        <div *ngIf="Show" class="absolute w-full py-1 mt-2 border border-1 border-neutral-400 rounded-md cursor-pointer bg-white">
+            <div class="py-2 px-4 w-full hover:bg-neutral-100">
+                <a [routerLink]="['/profile']">Profile</a>
+            </div>
+            <div class="py-2 px-4 w-full text-error hover:bg-neutral-100">
+                Logout
+            </div>
+        </div>
+      </div>
     </div>
-    <div class="user">
-        <p>Salma</p>
-        <img src="assets/icons/profile-circle.svg" alt="">
-    </div>
-</nav>
+  </nav>
+  
+  
