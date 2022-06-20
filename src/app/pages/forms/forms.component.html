@@ -1,8 +1,44 @@
 <main>
     <app-header></app-header>
-    <app-form title="Tell us the brand name you need in your logo" placeholder="Brand Name"></app-form>
-    <!-- <app-form title="Tell us in which language your briefing will be" placeholder="Language"></app-form> -->
-    <!-- <app-selectlogo></app-selectlogo> -->
-    
+    <app-form *ngIf="step ==1" name="brand" title="Tell us the brand name you need in your logo" placeholder="Brand Name"></app-form> 
+    <app-form *ngIf="step ==2"title="Tell us in which language your briefing will be" placeholder="Language"></app-form>
+    <app-selectlogo *ngIf="step ==3"></app-selectlogo>
+    <div class="dna" *ngIf="step ==4">
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+    </div>
+    <div class="dna" *ngIf="step ==5">
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+        <app-dna  choice1="Traditional" choice2="Modern"></app-dna>
+    </div>
+
+    <div class="smtn" *ngIf="step ==6">
+        <app-card name="icon" id="1" title="New Design" icon="assets/icons/star.svg"></app-card> 
+        <app-card name="icon" id="2" title="Existing Design" icon="assets/icons/refresh.svg"></app-card>
+    </div>
+    <div class="smtn"  *ngIf="step ==7">
+        <app-card title="New Design" icon="assets/icons/star.svg"></app-card> 
+        <app-card title="Existing Design" icon="assets/icons/refresh.svg"></app-card>
+    </div>
+   
 </main>
-<app-button></app-button>
+<footer>
+    <div>
+        <button (click)="prevStep()" *ngIf="step!=1" class="back">Back</button>
+        <div *ngIf="step==1">Money Back Guarantee</div>
+    </div>
+    
+    <div *ngIf="step!=7">
+        <button (click)="nextStep()">Continue</button>
+    </div>
+    <div *ngIf="step==7">
+        <button (click)="handleDesign()">Submit</button>
+    </div>
+    <div>
+        <span>We plant 1 tree every design project you start</span>
+    </div>
+</footer>

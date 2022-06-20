@@ -1,4 +1,4 @@
 <div class="form-group">
     <h1>{{ title }}</h1>
-    <input type="text"  id="power" name="brand" [placeholder]="placeholder">
+    <input type="text" (change)="handleInput($event)"  id="power" name="brand" [placeholder]="placeholder">
 </div>

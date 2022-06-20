@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { OrderService } from 'src/app/services/order.service';
 
 @Component({
   selector: 'app-chekout',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChekoutComponent implements OnInit {
 
-  constructor() { }
+  checkoutForm: FormGroup;
+  constructor(private orderService:OrderService) { }
 
   ngOnInit(): void {
+    this.checkoutForm = new FormGroup({
+      designId: new FormControl(''),
+      firstName: new FormControl(''),
+      lastName: new FormControl(''),
+      address: new FormControl(''),
+      company: new FormControl(''),
+
+  })
+  }
+
+  onSubmit(form: FormGroup) {
+    form.patchValue({designId: localStorage.getItem('designId') ?? '11B'});
+    form.get("designId")?.updateValueAndValidity();
+    this.orderService.createOrder(form.value).subscribe(
+      (data) => {
+        console.log(data);
+      }
+    )
   }
 
 }

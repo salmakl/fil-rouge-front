@@ -1,0 +1,36 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 30px;
+    box-shadow: 0 4px 14px 0 rgba(164, 175, 184, .75);
+    background-color: #fff;
+}
+
+button {
+    border: 1px solid #8a4fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.dna {
+    margin-top: 15%;
+}
+
+.smtn {
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.back {
+    color: #29272d4a;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}

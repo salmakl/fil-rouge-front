@@ -15,4 +15,14 @@ export class DnaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleInput(event:any) {
+  if (event.target.value<50 ) 
+  {
+    console.log(this.choice1);
+    localStorage.setItem(this.choice1, "true");
+  }else{
+    console.log(this.choice2);
+    localStorage.setItem(this.choice2, "true");
+  }
+}
 }

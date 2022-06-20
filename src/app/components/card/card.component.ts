@@ -9,9 +9,15 @@ export class CardComponent implements OnInit {
 
   @Input() title:string = "";
   @Input() icon:string = "";
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  handle(title:string) {
+    console.log(title);
+    localStorage.setItem('type',this.title);
+  }
 }

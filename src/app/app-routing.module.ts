@@ -14,6 +14,11 @@ import { OrderTableComponent } from './components/order-table/order-table.compon
 import { StatisticCardComponent } from './components/statistic-card/statistic-card.component';
 import { DashComponent } from './pages/dash/dash.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ClientsComponent } from './pages/clients/clients.component';
+import { FormsComponent } from './pages/forms/forms.component';
+import { ChekoutComponent } from './components/chekout/chekout.component';
+import { PricingComponent } from './components/pricing/pricing.component';
+import { AboutComponent } from './pages/about/about.component';
 
 const routes: Routes = [
   {path: 'login',component: LoginComponent },
@@ -28,6 +33,11 @@ const routes: Routes = [
   {path: 'statistic-card', component:StatisticCardComponent },
   {path: 'dash', component:DashComponent },
   {path: 'register', component:RegisterComponent },
+  {path: 'clients', component:ClientsComponent },
+  {path: 'form', component:FormsComponent },
+  {path: 'checkout', component:ChekoutComponent },
+  {path: 'pricing', component:PricingComponent },
+  {path: 'about', component:AboutComponent },
 
 ];
 

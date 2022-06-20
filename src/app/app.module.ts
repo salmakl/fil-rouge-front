@@ -39,6 +39,9 @@ import { DashComponent } from './pages/dash/dash.component';
 import { RegisterComponent } from './pages/register/register.component';
 
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './pages/about/about.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,12 +76,14 @@ import { RegisterComponent } from './pages/register/register.component';
     FormsComponent,
     DashComponent,
     RegisterComponent,
+    AboutComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

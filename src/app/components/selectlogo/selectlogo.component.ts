@@ -12,4 +12,8 @@ export class SelectlogoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  handleInput(event:any) {
+    console.log(event.target.value);
+    localStorage.setItem("logo", event.target.value); 
+  }
 }

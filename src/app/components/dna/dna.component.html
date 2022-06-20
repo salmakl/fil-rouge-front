@@ -1,7 +1,7 @@
 <section>
     <div class="slidecontainer" >
         <div>{{choice1}}</div>
-         <div><input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+         <div><input (change)="handleInput($event)" type="range" min="1" max="100" value="50" class="slider" id="myRange">
          </div>
          <div>{{choice2}}</div>
      </div> 

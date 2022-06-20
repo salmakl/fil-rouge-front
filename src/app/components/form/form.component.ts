@@ -9,9 +9,18 @@ export class FormComponent implements OnInit {
 
   @Input() title:string = "";
   @Input() placeholder:string = "";
+  @Input() name:string = "";
+  
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  handleInput(event:any) {
+    console.log(this.name);
+    console.log(event.target.value);
+    localStorage.setItem(this.name, event.target.value);
+  }
+
 
 }
