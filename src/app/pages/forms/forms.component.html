@@ -1,5 +1,6 @@
 <main>
     <app-header></app-header>
+    <app-price-card [price]="150"></app-price-card>
     <app-form *ngIf="step ==1" name="brand" title="Tell us the brand name you need in your logo" placeholder="Brand Name"></app-form> 
     <app-form *ngIf="step ==2"title="Tell us in which language your briefing will be" placeholder="Language"></app-form>
     <app-selectlogo *ngIf="step ==3"></app-selectlogo>
@@ -11,6 +12,7 @@
         
     </div>
     <div class="dna" *ngIf="step ==5">
+        <h1>Define the DNA of your project</h1>
         <app-dna  choice1="DETAILED" choice2="MINIMALIST"></app-dna>
         <app-dna  choice1="YOUTHFUL" choice2="MATURE"></app-dna>
         <app-dna  choice1="MASCULINE" choice2="FEMININE"></app-dna>
@@ -20,10 +22,6 @@
         <app-card name="icon" id="1" title="New Design" icon="assets/icons/star.svg"></app-card> 
         <app-card name="icon" id="2" title="Existing Design" icon="assets/icons/refresh.svg"></app-card>
     </div>
-    <div class="smtn"  *ngIf="step ==7">
-        <app-card title="New Design" icon="assets/icons/star.svg"></app-card> 
-        <app-card title="Existing Design" icon="assets/icons/refresh.svg"></app-card>
-    </div>
    
 </main>
 <footer>
@@ -32,10 +30,10 @@
         <div *ngIf="step==1">Money Back Guarantee</div>
     </div>
     
-    <div *ngIf="step!=7">
+    <div *ngIf="step!=6">
         <button (click)="nextStep()">Continue</button>
     </div>
-    <div *ngIf="step==7">
+    <div *ngIf="step==6">
         <button (click)="handleDesign()">Submit</button>
     </div>
     <div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { OrderService } from 'src/app/services/order.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chekout',
@@ -10,7 +11,7 @@ import { OrderService } from 'src/app/services/order.service';
 export class ChekoutComponent implements OnInit {
 
   checkoutForm: FormGroup;
-  constructor(private orderService:OrderService) { }
+  constructor(private orderService:OrderService,private router:Router) { }
 
   ngOnInit(): void {
     this.checkoutForm = new FormGroup({
@@ -29,6 +30,7 @@ export class ChekoutComponent implements OnInit {
     this.orderService.createOrder(form.value).subscribe(
       (data) => {
         console.log(data);
+        this.router.navigate(['/dashboard']);
       }
     )
   }

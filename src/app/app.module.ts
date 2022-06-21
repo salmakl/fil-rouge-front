@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './components/login/login.component';
+// import { LoginComponent } from './components/login/login.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
@@ -37,7 +37,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { FormsComponent } from './pages/forms/forms.component';
 import { DashComponent } from './pages/dash/dash.component';
 import { RegisterComponent } from './pages/register/register.component';
-
+import { LoginComponent } from './pages/login/login.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './pages/about/about.component';

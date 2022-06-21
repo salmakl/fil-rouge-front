@@ -10,7 +10,7 @@ export class LogoDesignService {
   constructor(private http:HttpClient) { }
   
   saveLogoDesign(logoDesign: any): Observable<any> {
-    return this.http.post<any>(`${environment.apiUrl}logodesign/store`, logoDesign);
+    return this.http.post<any>(`${environment.apiUrl}v1/logodesign/store`, logoDesign);
   }
   
 }

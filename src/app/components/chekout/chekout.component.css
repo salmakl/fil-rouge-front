@@ -54,7 +54,8 @@ section {
 .row>div {
     width: 100%;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -64,13 +65,23 @@ section {
     display: flex;
     justify-content: space-between;
 }
+
 span:first-child {
     font-weight: 700;
     font-size: 18px;
     color: #0c293f;
 }
+
 #total {
     font-weight: 700;
     font-size: 18px;
     color: #8A4FFF;
-}   
+}
+
+button {
+    background: #8a4fff;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
